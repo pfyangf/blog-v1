@@ -21,7 +21,7 @@ const config: Config = {
     onBrokenMarkdownLinks: 'warn',
 
     // GitHub Pages 推荐配置
-    trailingSlash: false,
+    trailingSlash: true,
 
     // 国际化配置
     i18n: {
