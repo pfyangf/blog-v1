@@ -5,99 +5,117 @@ import { usePluginData } from '@docusaurus/useGlobalData';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 interface BlogPost {
-    id: string;
-    metadata: {
-        title: string;
-        permalink: string;
-        date: string;
-        formattedDate: string;
-        tags: Array<{ label: string; permalink: string }>;
-        authors: Array<{ name: string }>;
-    };
+  id: string;
+  metadata: {
+    title: string;
+    permalink: string;
+    date: string;
+    formattedDate: string;
+    tags: Array<{ label: string; permalink: string }>;
+    authors: Array<{ name: string }>;
+  };
 }
 
 interface YearGroup {
-    year: string;
-    posts: BlogPost[];
+  year: string;
+  posts: BlogPost[];
 }
 
 export default function Archive(): JSX.Element {
-    const { siteConfig } = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
 
-    // 获取所有博客文章
-    const blogData = usePluginData('docusaurus-plugin-content-blog', 'default') as {
-        blogPosts: BlogPost[];
-    };
+  // 获取所有博客文章
+  const blogData = usePluginData('docusaurus-plugin-content-blog', 'default') as {
+    blogPosts?: BlogPost[];
+  };
 
-    // 按年份分组
-    const postsByYear: YearGroup[] = React.useMemo(() => {
-        const groups = new Map<string, BlogPost[]>();
-
-        blogData.blogPosts.forEach((post) => {
-            const year = new Date(post.metadata.date).getFullYear().toString();
-            if (!groups.has(year)) {
-                groups.set(year, []);
-            }
-            groups.get(year)!.push(post);
-        });
-
-        // 转换为数组并按年份降序排序
-        return Array.from(groups.entries())
-            .map(([year, posts]) => ({ year, posts }))
-            .sort((a, b) => parseInt(b.year) - parseInt(a.year));
-    }, [blogData.blogPosts]);
-
+  // 安全检查：如果没有博客数据，显示提示信息
+  if (!blogData || !blogData.blogPosts || blogData.blogPosts.length === 0) {
     return (
-        <Layout
-            title="博客归档"
-            description="按时间归档的所有博客文章">
-            <main className="container margin-vert--lg">
-                <div className="row">
-                    <div className="col col--8 col--offset-2">
-                        <h1>📚 博客归档</h1>
-                        <p className="margin-bottom--lg">
-                            共 {blogData.blogPosts.length} 篇文章
-                        </p>
+      <Layout
+        title="博客归档"
+        description="按时间归档的所有博客文章">
+        <main className="container margin-vert--lg">
+          <div className="row">
+            <div className="col col--8 col--offset-2">
+              <h1>📚 博客归档</h1>
+              <p>暂无博客文章</p>
+            </div>
+          </div>
+        </main>
+      </Layout>
+    );
+  }
 
-                        {postsByYear.map(({ year, posts }) => (
-                            <div key={year} className="margin-bottom--xl">
-                                <h2 className="archive-year">{year} 年</h2>
-                                <div className="archive-posts">
-                                    {posts.map((post) => (
-                                        <div key={post.id} className="archive-post-item">
-                                            <div className="archive-post-date">
-                                                {new Date(post.metadata.date).toLocaleDateString('zh-CN', {
-                                                    month: '2-digit',
-                                                    day: '2-digit',
-                                                })}
-                                            </div>
-                                            <div className="archive-post-content">
-                                                <Link
-                                                    to={post.metadata.permalink}
-                                                    className="archive-post-title">
-                                                    {post.metadata.title}
-                                                </Link>
-                                                <div className="archive-post-tags">
-                                                    {post.metadata.tags.map((tag) => (
-                                                        <Link
-                                                            key={tag.permalink}
-                                                            to={tag.permalink}
-                                                            className="tag">
-                                                            {tag.label}
-                                                        </Link>
-                                                    ))}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
+  // 按年份分组
+  const postsByYear: YearGroup[] = React.useMemo(() => {
+    const groups = new Map<string, BlogPost[]>();
+
+    blogData.blogPosts!.forEach((post) => {
+      const year = new Date(post.metadata.date).getFullYear().toString();
+      if (!groups.has(year)) {
+        groups.set(year, []);
+      }
+      groups.get(year)!.push(post);
+    });
+
+    // 转换为数组并按年份降序排序
+    return Array.from(groups.entries())
+      .map(([year, posts]) => ({ year, posts }))
+      .sort((a, b) => parseInt(b.year) - parseInt(a.year));
+  }, [blogData.blogPosts]);
+
+  return (
+    <Layout
+      title="博客归档"
+      description="按时间归档的所有博客文章">
+      <main className="container margin-vert--lg">
+        <div className="row">
+          <div className="col col--8 col--offset-2">
+            <h1>📚 博客归档</h1>
+            <p className="margin-bottom--lg">
+              共 {blogData.blogPosts.length} 篇文章
+            </p>
+
+            {postsByYear.map(({ year, posts }) => (
+              <div key={year} className="margin-bottom--xl">
+                <h2 className="archive-year">{year} 年</h2>
+                <div className="archive-posts">
+                  {posts.map((post) => (
+                    <div key={post.id} className="archive-post-item">
+                      <div className="archive-post-date">
+                        {new Date(post.metadata.date).toLocaleDateString('zh-CN', {
+                          month: '2-digit',
+                          day: '2-digit',
+                        })}
+                      </div>
+                      <div className="archive-post-content">
+                        <Link
+                          to={post.metadata.permalink}
+                          className="archive-post-title">
+                          {post.metadata.title}
+                        </Link>
+                        <div className="archive-post-tags">
+                          {post.metadata.tags.map((tag) => (
+                            <Link
+                              key={tag.permalink}
+                              to={tag.permalink}
+                              className="tag">
+                              {tag.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
                     </div>
+                  ))}
                 </div>
-            </main>
+              </div>
+            ))}
+          </div>
+        </div>
+      </main>
 
-            <style>{`
+      <style>{`
         .archive-year {
           font-size: 2rem;
           font-weight: 700;
@@ -166,6 +184,6 @@ export default function Archive(): JSX.Element {
           }
         }
       `}</style>
-        </Layout>
-    );
+    </Layout>
+  );
 }

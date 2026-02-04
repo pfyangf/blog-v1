@@ -4,100 +4,118 @@ import Link from '@docusaurus/Link';
 import { usePluginData } from '@docusaurus/useGlobalData';
 
 interface Tag {
-    label: string;
-    permalink: string;
-    count: number;
+  label: string;
+  permalink: string;
+  count: number;
 }
 
 export default function TagCloud(): JSX.Element {
-    const blogData = usePluginData('docusaurus-plugin-content-blog', 'default') as {
-        blogTags: Record<string, { label: string; permalink: string; count: number }>;
-    };
+  const blogData = usePluginData('docusaurus-plugin-content-blog', 'default') as {
+    blogTags?: Record<string, { label: string; permalink: string; count: number }>;
+  };
 
-    // 转换标签数据并按文章数量排序
-    const tags: Tag[] = React.useMemo(() => {
-        return Object.values(blogData.blogTags)
-            .sort((a, b) => b.count - a.count);
-    }, [blogData.blogTags]);
-
-    // 计算标签字体大小（基于文章数量）
-    const getTagSize = (count: number): number => {
-        const maxCount = Math.max(...tags.map(t => t.count));
-        const minCount = Math.min(...tags.map(t => t.count));
-        const minSize = 0.875; // rem
-        const maxSize = 2.5; // rem
-
-        if (maxCount === minCount) return (minSize + maxSize) / 2;
-
-        return minSize + ((count - minCount) / (maxCount - minCount)) * (maxSize - minSize);
-    };
-
-    // 计算标签颜色（基于文章数量）
-    const getTagColor = (count: number): string => {
-        const maxCount = Math.max(...tags.map(t => t.count));
-        const ratio = count / maxCount;
-
-        if (ratio > 0.7) return 'var(--ifm-color-primary-darkest)';
-        if (ratio > 0.4) return 'var(--ifm-color-primary-dark)';
-        if (ratio > 0.2) return 'var(--ifm-color-primary)';
-        return 'var(--ifm-color-primary-light)';
-    };
-
+  // 安全检查：如果没有标签数据，显示提示信息
+  if (!blogData || !blogData.blogTags || Object.keys(blogData.blogTags).length === 0) {
     return (
-        <Layout
-            title="标签云"
-            description="按文章数量加权展示的标签云">
-            <main className="container margin-vert--lg">
-                <div className="row">
-                    <div className="col col--10 col--offset-1">
-                        <h1>🏷️ 标签云</h1>
-                        <p className="margin-bottom--lg">
-                            共 {tags.length} 个标签，{Object.values(blogData.blogTags).reduce((sum, tag) => sum + tag.count, 0)} 篇文章
-                        </p>
+      <Layout
+        title="标签云"
+        description="按文章数量加权展示的标签云">
+        <main className="container margin-vert--lg">
+          <div className="row">
+            <div className="col col--10 col--offset-1">
+              <h1>🏷️ 标签云</h1>
+              <p>暂无标签数据</p>
+            </div>
+          </div>
+        </main>
+      </Layout>
+    );
+  }
 
-                        <div className="tag-cloud-container">
-                            {tags.map((tag) => (
-                                <Link
-                                    key={tag.permalink}
-                                    to={tag.permalink}
-                                    className="tag-cloud-item"
-                                    style={{
-                                        fontSize: `${getTagSize(tag.count)}rem`,
-                                        color: getTagColor(tag.count),
-                                    }}>
-                                    {tag.label}
-                                    <span className="tag-count">({tag.count})</span>
-                                </Link>
-                            ))}
-                        </div>
+  // 转换标签数据并按文章数量排序
+  const tags: Tag[] = React.useMemo(() => {
+    return Object.values(blogData.blogTags!)
+      .sort((a, b) => b.count - a.count);
+  }, [blogData.blogTags]);
 
-                        <div className="margin-top--xl">
-                            <h2>📊 标签统计</h2>
-                            <div className="tag-stats">
-                                {tags.map((tag, index) => (
-                                    <div key={tag.permalink} className="tag-stat-item">
-                                        <span className="tag-stat-rank">#{index + 1}</span>
-                                        <Link to={tag.permalink} className="tag-stat-name">
-                                            {tag.label}
-                                        </Link>
-                                        <div className="tag-stat-bar-container">
-                                            <div
-                                                className="tag-stat-bar"
-                                                style={{
-                                                    width: `${(tag.count / Math.max(...tags.map(t => t.count))) * 100}%`,
-                                                }}
-                                            />
-                                        </div>
-                                        <span className="tag-stat-count">{tag.count} 篇</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+  // 计算标签字体大小（基于文章数量）
+  const getTagSize = (count: number): number => {
+    const maxCount = Math.max(...tags.map(t => t.count));
+    const minCount = Math.min(...tags.map(t => t.count));
+    const minSize = 0.875; // rem
+    const maxSize = 2.5; // rem
+
+    if (maxCount === minCount) return (minSize + maxSize) / 2;
+
+    return minSize + ((count - minCount) / (maxCount - minCount)) * (maxSize - minSize);
+  };
+
+  // 计算标签颜色（基于文章数量）
+  const getTagColor = (count: number): string => {
+    const maxCount = Math.max(...tags.map(t => t.count));
+    const ratio = count / maxCount;
+
+    if (ratio > 0.7) return 'var(--ifm-color-primary-darkest)';
+    if (ratio > 0.4) return 'var(--ifm-color-primary-dark)';
+    if (ratio > 0.2) return 'var(--ifm-color-primary)';
+    return 'var(--ifm-color-primary-light)';
+  };
+
+  return (
+    <Layout
+      title="标签云"
+      description="按文章数量加权展示的标签云">
+      <main className="container margin-vert--lg">
+        <div className="row">
+          <div className="col col--10 col--offset-1">
+            <h1>🏷️ 标签云</h1>
+            <p className="margin-bottom--lg">
+              共 {tags.length} 个标签，{Object.values(blogData.blogTags).reduce((sum, tag) => sum + tag.count, 0)} 篇文章
+            </p>
+
+            <div className="tag-cloud-container">
+              {tags.map((tag) => (
+                <Link
+                  key={tag.permalink}
+                  to={tag.permalink}
+                  className="tag-cloud-item"
+                  style={{
+                    fontSize: `${getTagSize(tag.count)}rem`,
+                    color: getTagColor(tag.count),
+                  }}>
+                  {tag.label}
+                  <span className="tag-count">({tag.count})</span>
+                </Link>
+              ))}
+            </div>
+
+            <div className="margin-top--xl">
+              <h2>📊 标签统计</h2>
+              <div className="tag-stats">
+                {tags.map((tag, index) => (
+                  <div key={tag.permalink} className="tag-stat-item">
+                    <span className="tag-stat-rank">#{index + 1}</span>
+                    <Link to={tag.permalink} className="tag-stat-name">
+                      {tag.label}
+                    </Link>
+                    <div className="tag-stat-bar-container">
+                      <div
+                        className="tag-stat-bar"
+                        style={{
+                          width: `${(tag.count / Math.max(...tags.map(t => t.count))) * 100}%`,
+                        }}
+                      />
                     </div>
-                </div>
-            </main>
+                    <span className="tag-stat-count">{tag.count} 篇</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
 
-            <style>{`
+      <style>{`
         .tag-cloud-container {
           display: flex;
           flex-wrap: wrap;
@@ -208,6 +226,6 @@ export default function TagCloud(): JSX.Element {
           }
         }
       `}</style>
-        </Layout>
-    );
+    </Layout>
+  );
 }
