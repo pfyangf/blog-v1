@@ -10,11 +10,11 @@ const config: Config = {
 
     // 部署配置
     url: 'https://pfyangf.github.io',
-    baseUrl: '/blog-v1/',
+    baseUrl: '/',
 
     // GitHub pages 部署配置
     organizationName: 'pfyangf',
-    projectName: 'blog-v1',
+    projectName: 'pfyangf.github.io',
 
     // 错误处理
     onBrokenLinks: 'throw',
@@ -78,7 +78,7 @@ const config: Config = {
                     truncateMarker: /<!--\s*truncate\s*-->/,
 
                     // 编辑链接配置
-                    editUrl: 'https://github.com/pfyangf/blog-v1/tree/main/',
+                    editUrl: 'https://github.com/pfyangf/pfyangf.github.io/tree/main/',
 
                     // 博客作者配置
                     authorsMapPath: 'authors.yml',
