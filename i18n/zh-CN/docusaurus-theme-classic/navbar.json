@@ -1,0 +1,26 @@
+{
+    "title": {
+        "message": "AutoSec",
+        "description": "The title in the navbar"
+    },
+    "logo.alt": {
+        "message": "AutoSec Logo",
+        "description": "The alt text of navbar logo"
+    },
+    "item.label.Research": {
+        "message": "研究",
+        "description": "Navbar item with label Research"
+    },
+    "item.label.Topics": {
+        "message": "主题",
+        "description": "Navbar item with label Topics"
+    },
+    "item.label.Archive": {
+        "message": "归档",
+        "description": "Navbar item with label Archive"
+    },
+    "item.label.GitHub": {
+        "message": "GitHub",
+        "description": "Navbar item with label GitHub"
+    }
+}

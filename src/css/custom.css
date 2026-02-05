@@ -122,7 +122,7 @@ body {
   box-shadow: var(--autosec-shadow-sm);
   padding: 0;
   height: var(--ifm-navbar-height);
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
   /* 强制全屏宽度 */
@@ -287,6 +287,7 @@ body {
 
 .main-wrapper {
   min-height: calc(100vh - var(--ifm-navbar-height));
+  padding-top: var(--ifm-navbar-height);
 }
 
 /* Blog List Page Enhancements */

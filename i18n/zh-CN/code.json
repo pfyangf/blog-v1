@@ -1,0 +1,162 @@
+{
+    "theme.ErrorPageContent.title": {
+        "message": "页面崩溃了。",
+        "description": "The title of the fallback page when the page crashed"
+    },
+    "theme.BackToTopButton.buttonAriaLabel": {
+        "message": "回到顶部",
+        "description": "The ARIA label for the back to top button"
+    },
+    "theme.blog.archive.title": {
+        "message": "归档",
+        "description": "The page & hero title of the blog archive page"
+    },
+    "theme.blog.archive.description": {
+        "message": "归档",
+        "description": "The page & hero description of the blog archive page"
+    },
+    "theme.blog.paginator.navAriaLabel": {
+        "message": "博客文章列表分页导航",
+        "description": "The ARIA label for the blog pagination"
+    },
+    "theme.blog.paginator.newerEntries": {
+        "message": "较新的文章",
+        "description": "The label used to navigate to the newer blog posts page (previous page)"
+    },
+    "theme.blog.paginator.olderEntries": {
+        "message": "较旧的文章",
+        "description": "The label used to navigate to the older blog posts page (next page)"
+    },
+    "theme.blog.post.paginator.navAriaLabel": {
+        "message": "博客文章分页导航",
+        "description": "The ARIA label for the blog posts pagination"
+    },
+    "theme.blog.post.paginator.newerPost": {
+        "message": "较新一篇",
+        "description": "The blog post button label to navigate to the newer/previous post"
+    },
+    "theme.blog.post.paginator.olderPost": {
+        "message": "较旧一篇",
+        "description": "The blog post button label to navigate to the older/next post"
+    },
+    "theme.tags.tagsPageLink": {
+        "message": "查看所有标签",
+        "description": "The label of the link targeting the tag list page"
+    },
+    "theme.colorToggle.ariaLabel": {
+        "message": "切换浅色/暗黑模式（当前为{mode}）",
+        "description": "The ARIA label for the color mode toggle"
+    },
+    "theme.colorToggle.ariaLabel.mode.dark": {
+        "message": "暗黑模式",
+        "description": "The name for the dark color mode"
+    },
+    "theme.colorToggle.ariaLabel.mode.light": {
+        "message": "浅色模式",
+        "description": "The name for the light color mode"
+    },
+    "theme.blog.post.readMore": {
+        "message": "阅读更多",
+        "description": "The label used in blog post item excerpts to link to full blog posts"
+    },
+    "theme.blog.post.readMoreLabel": {
+        "message": "阅读 {title} 的全文",
+        "description": "The ARIA label for the link to full blog posts from excerpts"
+    },
+    "theme.blog.post.readingTime.plurals": {
+        "message": "阅读需 {readingTime} 分钟",
+        "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    },
+    "theme.tags.tagsListLabel": {
+        "message": "标签：",
+        "description": "The label alongside a tag list"
+    },
+    "theme.common.editThisPage": {
+        "message": "编辑此页",
+        "description": "The link label to edit the current page"
+    },
+    "theme.common.headingLinkTitle": {
+        "message": "标题的直接链接",
+        "description": "Title for link to heading"
+    },
+    "theme.lastUpdated.atDate": {
+        "message": "于 {date}",
+        "description": "The words used to describe on which date a page has been last updated"
+    },
+    "theme.lastUpdated.byUser": {
+        "message": "由 {user}",
+        "description": "The words used to describe by who the page has been last updated"
+    },
+    "theme.lastUpdated.lastUpdatedAtBy": {
+        "message": "最后更新{atDate}{byUser}",
+        "description": "The sentence used to display when a page has been last updated, and by who"
+    },
+    "theme.NotFound.title": {
+        "message": "找不到页面",
+        "description": "The title of the 404 page"
+    },
+    "theme.NotFound.p1": {
+        "message": "我们找不到您要找的页面。",
+        "description": "The first paragraph of the 404 page"
+    },
+    "theme.NotFound.p2": {
+        "message": "请联系原始链接来源网站的所有者，并告知他们链接已损坏。",
+        "description": "The 2nd paragraph of the 404 page"
+    },
+    "theme.CodeBlock.copy": {
+        "message": "复制",
+        "description": "The copy button label on code blocks"
+    },
+    "theme.CodeBlock.copied": {
+        "message": "已复制",
+        "description": "The copied button label on code blocks"
+    },
+    "theme.CodeBlock.copyButtonAriaLabel": {
+        "message": "复制代码到剪贴板",
+        "description": "The ARIA label for copy code blocks button"
+    },
+    "theme.CodeBlock.wordWrapToggle": {
+        "message": "切换自动换行",
+        "description": "The title attribute for toggle word wrapping button of code block lines"
+    },
+    "theme.TOCCollapsible.toggleButtonLabel": {
+        "message": "本页总览",
+        "description": "The label used by the button on the collapsible TOC component"
+    },
+    "theme.blog.post.plurals": {
+        "message": "{count} 篇博文",
+        "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    },
+    "theme.blog.tagTitle": {
+        "message": "{nPosts} 含有标签「{tagName}」",
+        "description": "The title of the page for a blog tag"
+    },
+    "theme.blog.author.pageTitle": {
+        "message": "{authorName} - {nPosts}",
+        "description": "The title of the page for a blog author"
+    },
+    "theme.blog.authorsList.pageTitle": {
+        "message": "作者",
+        "description": "The title of the authors page"
+    },
+    "theme.blog.authorsList.viewAll": {
+        "message": "查看所有作者",
+        "description": "The label of the link targeting the blog authors page"
+    },
+    "theme.tags.tagsPageTitle": {
+        "message": "标签",
+        "description": "The title of the tag list page"
+    },
+    "theme.AnnouncementBar.closeButtonAriaLabel": {
+        "message": "关闭",
+        "description": "The ARIA label for close button of announcement bar"
+    },
+    "theme.navbar.mobileLanguageDropdown.label": {
+        "message": "选择语言",
+        "description": "The label for the mobile language switcher dropdown"
+    },
+    "theme.common.skipToMainContent": {
+        "message": "跳到主要内容",
+        "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+    }
+}
