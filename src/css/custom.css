@@ -104,9 +104,24 @@ body {
 
 .navbar>.navbar__inner {
   max-width: 1280px;
+  /* 默认宽度 */
   padding: 0 2rem;
   margin: 0 auto;
   width: 100%;
+}
+
+/* 大屏幕 - 1440px */
+@media (min-width: 1400px) {
+  .navbar>.navbar__inner {
+    max-width: 1440px;
+  }
+}
+
+/* 超大屏幕 - 1600px */
+@media (min-width: 1600px) {
+  .navbar>.navbar__inner {
+    max-width: 1600px;
+  }
 }
 
 .navbar__logo {
@@ -156,7 +171,22 @@ body {
 
 .footer>.container {
   max-width: 1280px;
+  /* 默认宽度 */
   margin: 0 auto;
+}
+
+/* 大屏幕 - 1440px */
+@media (min-width: 1400px) {
+  .footer>.container {
+    max-width: 1440px;
+  }
+}
+
+/* 超大屏幕 - 1600px */
+@media (min-width: 1600px) {
+  .footer>.container {
+    max-width: 1600px;
+  }
 }
 
 .footer__title {
@@ -200,8 +230,23 @@ body {
 
 .container {
   max-width: 1280px;
+  /* 默认宽度 */
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+/* 大屏幕 - 1440px */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+/* 超大屏幕 - 1600px */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+  }
 }
 
 /* ========================================
