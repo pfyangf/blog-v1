@@ -4,6 +4,7 @@ title: Account Abstraction Security Analysis
 authors: [autosec]
 tags: [whitehat-spotlight]
 date: 2026-07-08T10:00
+image: https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630&fit=crop
 ---
 
 Account Abstraction is transforming the Ethereum user experience but also introduces new security considerations.

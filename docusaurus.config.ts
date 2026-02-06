@@ -65,9 +65,9 @@ const config: Config = {
                     // 每页显示的文章数
                     postsPerPage: 10,
 
-                    // 博客侧边栏配置
+                    // 博客侧边栏配置（设为 0 隐藏 sidebar）
                     blogSidebarTitle: '最近文章',
-                    blogSidebarCount: 10,
+                    blogSidebarCount: 0,
 
                     // 博客列表页标题
                     blogTitle: 'Security Research',
@@ -175,10 +175,6 @@ const config: Config = {
                         {
                             label: 'Home',
                             to: '/',
-                        },
-                        {
-                            label: 'Archive',
-                            to: '/archive',
                         },
                     ],
                 },

@@ -4,6 +4,7 @@ title: The Integration of AI and Blockchain Security
 authors: [autosec]
 tags: [whitehat-spotlight]
 date: 2026-01-15T10:00
+image: https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630&fit=crop
 ---
 
 Explore how artificial intelligence is transforming the field of blockchain security and future development trends.

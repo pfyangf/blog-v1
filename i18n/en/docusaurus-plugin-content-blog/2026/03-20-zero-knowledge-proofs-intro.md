@@ -4,6 +4,7 @@ title: Introduction to Zero-Knowledge Proofs
 authors: [autosec]
 tags: [security-guides]
 date: 2026-03-20T10:00
+image: https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630&fit=crop
 ---
 
 Zero-Knowledge Proofs (ZKPs) are a key technology for privacy protection in blockchain.

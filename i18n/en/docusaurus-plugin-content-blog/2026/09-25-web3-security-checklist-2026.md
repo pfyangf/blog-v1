@@ -4,6 +4,7 @@ title: 2026 Web3 Security Checklist
 authors: [autosec]
 tags: [security-guides]
 date: 2026-09-25T10:00
+image: https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630&fit=crop
 ---
 
 A comprehensive Web3 security checklist to help developers and users enhance security awareness.

@@ -67,9 +67,31 @@ export default function BlogPostItem({ children, className }: Props): ReactNode 
     );
   }
 
-  // 详情页保持原样
+  // 详情页：若有 frontmatter image 则在首行预览
+  const hasDetailImage = frontMatter.image;
   return (
     <BlogPostItemContainer className={clsx(containerClassName, className)}>
+      {hasDetailImage && (
+        <div
+          className="blog-post-detail-image"
+          style={{
+            marginBottom: '1.5rem',
+            borderRadius: '8px',
+            overflow: 'hidden',
+            backgroundColor: 'var(--ifm-color-emphasis-100)',
+          }}>
+          <img
+            src={frontMatter.image}
+            alt={metadata.title}
+            style={{
+              width: '100%',
+              maxHeight: '420px',
+              objectFit: 'cover',
+              display: 'block',
+            }}
+          />
+        </div>
+      )}
       <BlogPostItemHeader />
       <BlogPostItemContent>{children}</BlogPostItemContent>
       <BlogPostItemFooter />
