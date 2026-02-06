@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "安全研究",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "前沿 Web3 安全研究、智能合约审计与区块链漏洞分析",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "近期文章",
+    "description": "The label for the left sidebar"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "title": {
-    "message": "AutoSec",
-    "description": "The title in the navbar"
+    "message": "",
+    "description": "The title in the navbar (hidden)"
   },
   "logo.alt": {
     "message": "AutoSec Logo",

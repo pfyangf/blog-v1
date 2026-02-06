@@ -1,11 +1,27 @@
 {
     "title": {
-        "message": "AutoSec",
-        "description": "The title in the navbar"
+        "message": "",
+        "description": "The title in the navbar (hidden)"
     },
     "logo.alt": {
         "message": "AutoSec Logo",
         "description": "The alt text of navbar logo"
+    },
+    "item.label.Home": {
+        "message": "首页",
+        "description": "Navbar item with label Home"
+    },
+    "item.label.Customers": {
+        "message": "客户案例",
+        "description": "Navbar item with label Customers"
+    },
+    "item.label.Whitehat Spotlight": {
+        "message": "白帽聚焦",
+        "description": "Navbar item with label Whitehat Spotlight"
+    },
+    "item.label.Security Guides": {
+        "message": "安全指南",
+        "description": "Navbar item with label Security Guides"
     },
     "item.label.Research": {
         "message": "研究",

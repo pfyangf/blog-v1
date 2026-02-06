@@ -136,8 +136,8 @@ const config: Config = {
             title: '',
             logo: {
                 alt: 'AutoSec - Web3 Security Platform',
-                src: 'img/autosec.png',
-                srcDark: 'img/autosec.png',
+                src: 'img/logo-with-domain.png',
+                srcDark: 'img/logo-with-domain.png',
                 width: 180,
                 height: 60,
             },
@@ -161,6 +161,10 @@ const config: Config = {
                     to: '/tags/security-guides',
                     label: 'Security Guides',
                     position: 'left',
+                },
+                {
+                    type: 'localeDropdown',
+                    position: 'right',
                 },
             ],
         },

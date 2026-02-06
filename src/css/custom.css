@@ -53,6 +53,11 @@
   --ifm-global-shadow-tl: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
+/* 隐藏 navbar 中 logo 旁边的标题 */
+.navbar__title {
+  display: none !important;
+}
+
 /* Dark Theme (Optional) */
 [data-theme='dark'] {
   --ifm-background-color: #1A1A1A;
