@@ -1,63 +1,63 @@
 ---
 slug: crypto-wallet-recovery
-title: 加密钱包恢复指南
+title: Cryptocurrency Wallet Recovery Guide
 authors: [autosec]
 tags: [customers]
 date: 2025-11-25T10:00
 ---
 
-了解如何安全地备份和恢复加密钱包，避免资产永久丢失。
+Learn how to securely back up and restore cryptocurrency wallets to prevent permanent asset loss.
 
 <!--truncate-->
 
-## 备份方式
+## Backup Methods
 
-### 1. 助记词备份
+### 1. Seed Phrase Backup
 
-12 或 24 个单词的助记词是恢复钱包的关键。
+A 12 or 24-word seed phrase is the key to wallet recovery.
 
-### 2. 私钥备份
+### 2. Private Key Backup
 
-直接备份私钥（不推荐新手使用）。
+Directly backing up the private key (not recommended for beginners).
 
-## 安全存储
+## Secure Storage
 
-### 物理存储
+### Physical Storage
 
-- 金属板刻录
-- 纸质备份（防水防火）
-- 保险箱存放
+- Engraved metal plates.
+- Paper backups (waterproof and fire-resistant).
+- Safe deposit box storage.
 
-### 数字存储（谨慎）
+### Digital Storage (Use with Caution)
 
-- 加密的 USB 驱动器
-- 密码管理器（离线）
+- Encrypted USB drives.
+- Password managers (offline).
 
-## 恢复步骤
+## Recovery Steps
 
-1. 下载官方钱包应用
-2. 选择"恢复钱包"选项
-3. 按顺序输入助记词
-4. 设置新密码
-5. 验证地址是否正确
+1. Download the official wallet application.
+2. Select the "Restore Wallet" option.
+3. Enter the seed phrase in the correct order.
+4. Set a new password.
+5. Verify that the addresses are correct.
 
-## 常见错误
+## Common Mistakes
 
-- 助记词顺序错误
-- 拼写错误
-- 使用了错误的派生路径
+- Entering seed words in the wrong order.
+- Spelling errors.
+- Using an incorrect derivation path.
 
-## 安全提示
+## Security Tips
 
-⚠️ **永远不要**：
-- 在线存储助记词
-- 拍照保存助记词
-- 与他人分享助记词
+⚠️ **Never**:
+- Store your seed phrase online.
+- Save photos of your seed phrase.
+- Share your seed phrase with others.
 
-## 测试恢复
+## Test Recovery
 
-建议用小额资金测试恢复流程，确保备份有效。
+It is recommended to test the recovery process with a small amount of funds to ensure the backup is effective.
 
-## 总结
+## Conclusion
 
-正确的备份和恢复流程是保护资产的最后一道防线。
+A proper backup and recovery process is the last line of defense in protecting your assets.

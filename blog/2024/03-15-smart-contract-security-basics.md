@@ -1,28 +1,28 @@
 ---
 slug: smart-contract-security-basics
-title: 智能合约安全基础
+title: Smart Contract Security Basics
 authors: [autosec]
 tags: [customers, announcements]
 date: 2024-03-15T10:00
 image: https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630&fit=crop
 ---
 
-智能合约安全是区块链开发的核心。本文介绍智能合约安全的基本概念和常见漏洞。
+Smart contract security is at the core of blockchain development. This article introduces the fundamental concepts and common vulnerabilities of smart contract security.
 
 <!--truncate-->
 
-## 什么是智能合约？
+## What is a Smart Contract?
 
-智能合约是运行在区块链上的自动执行程序，一旦部署就无法修改。
+A smart contract is a self-executing program running on the blockchain that cannot be modified once deployed.
 
-## 常见安全问题
+## Common Security Issues
 
-### 1. 重入攻击
+### 1. Reentrancy Attacks
 
-重入攻击是最常见的智能合约漏洞之一。
+Reentrancy attacks are one of the most common vulnerabilities in smart contracts.
 
 ```solidity
-// 不安全的代码示例
+// Insecure code example
 function withdraw() public {
     uint amount = balances[msg.sender];
     msg.sender.call{value: amount}("");
@@ -30,16 +30,15 @@ function withdraw() public {
 }
 ```
 
-### 2. 整数溢出
+### 2. Integer Overflow
+Integer overflow could occur in Solidity before version 0.8.0.
 
-在 Solidity 0.8.0 之前，整数运算可能发生溢出。
+Security Recommendations
+Use the latest version of Solidity
 
-## 安全建议
+Conduct code audits
 
-- 使用最新版本的 Solidity
-- 进行代码审计
-- 编写完整的测试用例
+Write comprehensive test cases
 
-## 总结
-
-智能合约安全需要开发者高度重视，遵循最佳实践可以避免大部分安全问题。
+Conclusion
+Smart contract security requires significant attention from developers. Following best practices can help prevent most security issues.

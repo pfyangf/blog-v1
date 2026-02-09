@@ -1,36 +1,36 @@
 ---
 slug: nft-security-tips
-title: NFT 安全使用技巧
+title: NFT Security Tips
 authors: [autosec]
 tags: [security-guides]
 date: 2024-08-10T10:00
 image: https://images.unsplash.com/photo-1620321023374-d1a68fbc720d?w=1200&h=630&fit=crop
 ---
 
-NFT 市场火热，但诈骗和攻击事件频发。了解如何安全地使用 NFT 至关重要。
+The NFT market is booming, but scams and attacks are frequent. Understanding how to use NFTs safely is crucial.
 
 <!--truncate-->
 
-## 常见 NFT 诈骗
+## Common NFT Scams
 
-### 1. 钓鱼网站
+### 1. Phishing Websites
 
-假冒的 NFT 市场网站窃取用户的钱包凭证。
+Fake NFT marketplace websites designed to steal users' wallet credentials.
 
-### 2. 虚假空投
+### 2. Fake Airdrops
 
-诈骗者发送虚假的 NFT 空投链接。
+Scammers send links to fraudulent NFT airdrops.
 
-## 安全建议
+## Security Recommendations
 
-- **验证网站 URL**：确保访问官方网站
-- **使用硬件钱包**：存储高价值 NFT
-- **检查合约地址**：在交易前验证合约
+- **Verify Website URLs**: Ensure you are visiting the official website.
+- **Use Hardware Wallets**: Store high-value NFTs.
+- **Check Contract Addresses**: Verify the contract before making a transaction.
 
-## NFT 存储
+## NFT Storage
 
-推荐使用冷钱包存储珍贵的 NFT，避免在线风险。
+It is recommended to store precious NFTs in cold wallets to avoid online risks.
 
-## 总结
+## Conclusion
 
-保护好你的 NFT 资产，警惕各种诈骗手段。
+Protect your NFT assets and stay vigilant against various scam tactics.

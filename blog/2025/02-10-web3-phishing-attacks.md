@@ -1,44 +1,44 @@
 ---
 slug: web3-phishing-attacks
-title: Web3 钓鱼攻击防范指南
+title: Guide to Preventing Web3 Phishing Attacks
 authors: [autosec]
 tags: [security-guides]
 date: 2025-02-10T10:00
 ---
 
-钓鱼攻击是 Web3 用户面临的最大威胁之一。学习如何识别和防范钓鱼攻击。
+Phishing attacks are one of the greatest threats faced by Web3 users. Learn how to identify and prevent phishing attacks.
 
 <!--truncate-->
 
-## 常见钓鱼手段
+## Common Phishing Tactics
 
-### 1. 假冒网站
+### 1. Fake Websites
 
-攻击者创建与官方网站极其相似的钓鱼网站。
+Attackers create phishing websites that closely resemble official ones.
 
-### 2. 恶意签名请求
+### 2. Malicious Signature Requests
 
-诱导用户签署恶意交易。
+Tricking users into signing malicious transactions.
 
-## 识别技巧
+## Identification Tips
 
-- 检查 URL 是否正确
-- 验证 HTTPS 证书
-- 查看域名注册时间
+- Check if the URL is correct.
+- Verify the HTTPS certificate.
+- Check the domain registration date.
 
-## 防护措施
+## Protective Measures
 
-1. 使用书签访问常用网站
-2. 启用钱包的交易模拟功能
-3. 安装安全插件
+1. Use bookmarks to access frequently used websites.
+2. Enable transaction simulation features in your wallet.
+3. Install security plugins.
 
-## 应急处理
+## Emergency Response
 
-如果不慎点击钓鱼链接：
-- 立即转移资产
-- 更换钱包
-- 报告给相关平台
+If you accidentally click on a phishing link:
+- Immediately transfer your assets.
+- Replace your wallet.
+- Report the incident to relevant platforms.
 
-## 总结
+## Conclusion
 
-提高警惕，养成良好的安全习惯，可以有效防范钓鱼攻击。
+Remaining vigilant and cultivating good security habits can effectively prevent phishing attacks.

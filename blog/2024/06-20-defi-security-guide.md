@@ -1,37 +1,37 @@
 ---
 slug: defi-security-guide
-title: DeFi 安全指南
+title: DeFi Security Guide
 authors: [autosec]
 tags: [whitehat-spotlight]
 date: 2024-06-20T10:00
 image: https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=1200&h=630&fit=crop
 ---
 
-DeFi（去中心化金融）正在改变金融行业，但也带来了新的安全挑战。
+DeFi (Decentralized Finance) is transforming the financial industry but also introduces new security challenges.
 
 <!--truncate-->
 
-## DeFi 的安全风险
+## DeFi Security Risks
 
-### 智能合约风险
+### Smart Contract Risks
 
-DeFi 协议依赖智能合约，任何漏洞都可能导致资金损失。
+DeFi protocols rely on smart contracts; any vulnerability can lead to fund loss.
 
-### 价格操纵
+### Price Manipulation
 
-攻击者可能通过闪电贷操纵价格预言机。
+Attackers may manipulate price oracles through flash loans.
 
-## 如何保护资产
+## How to Protect Your Assets
 
-1. **分散投资**：不要将所有资金放在一个协议中
-2. **使用审计过的协议**：选择经过安全审计的项目
-3. **小额测试**：首次使用时先进行小额测试
+1. **Diversify Investments**: Do not allocate all funds to a single protocol.
+2. **Use Audited Protocols**: Choose projects that have undergone security audits.
+3. **Test with Small Amounts**: Start with a small test transaction when using a new protocol.
 
-## 推荐工具
+## Recommended Tools
 
-- **DeFi Pulse**: 追踪 DeFi 协议
-- **DeFiSafety**: 查看安全评分
+- **DeFi Pulse**: Tracks DeFi protocols.
+- **DeFiSafety**: Check security ratings.
 
-## 结论
+## Conclusion
 
-DeFi 提供了巨大机会，但需要谨慎对待安全问题。
+DeFi offers significant opportunities, but security issues must be approached with caution.

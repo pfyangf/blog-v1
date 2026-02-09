@@ -1,65 +1,66 @@
 ---
 slug: account-abstraction-security
-title: 账户抽象安全分析
+title: Account Abstraction Security Analysis
 authors: [autosec]
 tags: [whitehat-spotlight]
 date: 2026-07-08T10:00
+image: https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630&fit=crop
 ---
 
-账户抽象（Account Abstraction）正在改变以太坊的用户体验，但也带来了新的安全考虑。
+Account Abstraction is transforming the Ethereum user experience but also introduces new security considerations.
 
 <!--truncate-->
 
-## 什么是账户抽象？
+## What is Account Abstraction?
 
-账户抽象允许智能合约钱包拥有与 EOA 相同的功能，提供更灵活的账户管理。
+Account Abstraction allows smart contract wallets to possess the same capabilities as EOAs (Externally Owned Accounts), providing more flexible account management.
 
-## ERC-4337 标准
+## ERC-4337 Standard
 
-### 核心概念
+### Core Concepts
 
-- **UserOperation**: 用户意图的表达
-- **Bundler**: 打包和提交交易
-- **EntryPoint**: 统一的入口合约
-- **Paymaster**: 代付 gas 费
+- **UserOperation**: An expression of user intent.
+- **Bundler**: Packages and submits transactions.
+- **EntryPoint**: A unified entry contract.
+- **Paymaster**: Pays gas fees on behalf of users.
 
-## 安全优势
+## Security Advantages
 
-### 1. 社交恢复
+### 1. Social Recovery
 
-无需助记词，通过信任的联系人恢复账户。
+Recover accounts through trusted contacts without needing a seed phrase.
 
-### 2. 多签授权
+### 2. Multi-Signature Authorization
 
-关键操作需要多个签名。
+Critical operations require multiple signatures.
 
-### 3. 自定义验证逻辑
+### 3. Custom Validation Logic
 
-支持各种身份验证方式。
+Supports various authentication methods.
 
-## 安全风险
+## Security Risks
 
-### Paymaster 风险
+### Paymaster Risks
 
-恶意 Paymaster 可能窃取用户资金。
+A malicious Paymaster could potentially steal user funds.
 
-### 签名验证漏洞
+### Signature Validation Vulnerabilities
 
-自定义验证逻辑可能存在漏洞。
+Custom validation logic may contain vulnerabilities.
 
-## 最佳实践
+## Best Practices
 
-1. 使用经过审计的账户抽象钱包
-2. 谨慎选择 Paymaster
-3. 设置合理的支出限额
-4. 定期审查授权
+1. Use audited Account Abstraction wallets.
+2. Choose Paymasters cautiously.
+3. Set reasonable spending limits.
+4. Regularly review authorizations.
 
-## 主流实现
+## Main Implementations
 
-- **Safe**: 多签智能合约钱包
-- **Argent**: 社交恢复钱包
-- **Biconomy**: AA 基础设施
+- **Safe**: Multi-signature smart contract wallet.
+- **Argent**: Social recovery wallet.
+- **Biconomy**: AA infrastructure.
 
-## 总结
+## Conclusion
 
-账户抽象提供了更好的用户体验，但需要理解其安全模型。
+Account Abstraction offers a better user experience, but understanding its security model is essential.

@@ -1,60 +1,59 @@
 ---
 slug: mev-protection-strategies
-title: MEV 保护策略
+title: MEV Protection Strategies
 authors: [autosec]
 tags: [customers]
 date: 2026-05-12T10:00
-image: https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630&fit=crop
 ---
 
-MEV（矿工可提取价值）对 DeFi 用户造成了巨大影响。了解如何保护自己免受 MEV 攻击。
+MEV (Miner Extractable Value) has a significant impact on DeFi users. Learn how to protect yourself from MEV attacks.
 
 <!--truncate-->
 
-## 什么是 MEV？
+## What is MEV?
 
-MEV 是指矿工或验证者通过重新排序、插入或审查交易来获取的额外利润。
+MEV refers to the extra profit miners or validators can extract by reordering, inserting, or censoring transactions.
 
-## 常见 MEV 攻击
+## Common MEV Attacks
 
-### 1. 抢跑（Front-running）
+### 1. Front-running
 
-攻击者看到你的交易后，以更高的 gas 费优先执行。
+An attacker sees your transaction and executes a similar one with a higher gas fee to get priority.
 
-### 2. 三明治攻击
+### 2. Sandwich Attacks
 
-在你的交易前后插入交易，操纵价格获利。
+Inserting trades before and after your transaction to manipulate the price for profit.
 
-## 保护措施
+## Protection Measures
 
-### 使用 MEV 保护工具
+### Using MEV Protection Tools
 
-- **Flashbots Protect**: 私密交易池
-- **CowSwap**: MEV 保护的 DEX
-- **1inch Fusion**: 防 MEV 交易
+- **Flashbots Protect**: Private transaction pool.
+- **CowSwap**: MEV-protected DEX.
+- **1inch Fusion**: MEV-resistant trades.
 
-### 交易策略
+### Trading Strategies
 
-1. 设置合理的滑点
-2. 分批执行大额交易
-3. 使用限价单而非市价单
+1. Set reasonable slippage tolerance.
+2. Execute large trades in smaller batches.
+3. Use limit orders instead of market orders.
 
-## 技术原理
+## Technical Principles
 
 ### Flashbots
 
-通过私密内存池避免交易被公开监控。
+Avoids public monitoring of transactions through a private mempool.
 
-### 订单流拍卖
+### Order Flow Auctions
 
-让用户从 MEV 中获益而不是受害。
+Allows users to benefit from MEV rather than be exploited by it.
 
-## 未来发展
+## Future Developments
 
-- PBS（提议者-构建者分离）
-- 加密内存池
-- 公平排序协议
+- PBS (Proposer-Builder Separation).
+- Encrypted mempools.
+- Fair ordering protocols.
 
-## 总结
+## Conclusion
 
-了解 MEV 并采取保护措施，可以减少交易损失。
+Understanding MEV and taking protective measures can help reduce trading losses.

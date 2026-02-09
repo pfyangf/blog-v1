@@ -1,43 +1,43 @@
 ---
 slug: wallet-security-best-practices
-title: 加密钱包安全最佳实践
+title: Cryptocurrency Wallet Security Best Practices
 authors: [autosec]
 tags: [customers, bug-fix-reviews]
 date: 2024-10-05T10:00
 ---
 
-加密钱包是管理数字资产的关键工具。本文介绍钱包安全的最佳实践。
+Cryptocurrency wallets are essential tools for managing digital assets. This article introduces best practices for wallet security.
 
 <!--truncate-->
 
-## 钱包类型
+## Wallet Types
 
-### 热钱包
+### Hot Wallet
 
-连接互联网的钱包，方便但风险较高。
+Connected to the internet, convenient but carries higher risks.
 
-### 冷钱包
+### Cold Wallet
 
-离线存储，安全性更高，适合长期持有。
+Offline storage, offering higher security and suitable for long-term holdings.
 
-## 安全建议
+## Security Recommendations
 
-1. **备份助记词**：写在纸上，存放在安全的地方
-2. **使用强密码**：设置复杂的密码
-3. **启用 2FA**：双重认证增加安全性
-4. **定期更新**：保持钱包软件最新版本
+1. **Backup Your Seed Phrase**: Write it on paper and store it in a secure location.
+2. **Use Strong Passwords**: Set a complex password.
+3. **Enable 2FA**: Two-factor authentication adds an extra layer of security.
+4. **Update Regularly**: Keep your wallet software up to date.
 
-## 常见错误
+## Common Mistakes
 
-- 在线存储助记词
-- 使用公共 WiFi 进行交易
-- 点击不明链接
+- Storing seed phrases online.
+- Transacting over public WiFi.
+- Clicking on unknown links.
 
-## 推荐钱包
+## Recommended Wallets
 
-- **硬件钱包**: Ledger, Trezor
-- **软件钱包**: MetaMask, Trust Wallet
+- **Hardware Wallets**: Ledger, Trezor.
+- **Software Wallets**: MetaMask, Trust Wallet.
 
-## 结论
+## Conclusion
 
-钱包安全是保护资产的第一道防线，务必重视。
+Wallet security is the first line of defense in protecting your assets, so it must be taken seriously.

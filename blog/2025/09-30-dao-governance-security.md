@@ -1,53 +1,53 @@
 ---
 slug: dao-governance-security
-title: DAO 治理安全指南
+title: DAO Governance Security Guide
 authors: [autosec]
 tags: [security-guides]
 date: 2025-09-30T10:00
 ---
 
-DAO（去中心化自治组织）的治理安全至关重要。本文探讨 DAO 治理的安全问题。
+DAO (Decentralized Autonomous Organization) governance security is crucial. This article explores security issues in DAO governance.
 
 <!--truncate-->
 
-## DAO 治理风险
+## DAO Governance Risks
 
-### 1. 治理攻击
+### 1. Governance Attacks
 
-攻击者通过购买大量治理代币控制 DAO。
+Attackers gain control of a DAO by acquiring a large number of governance tokens.
 
-### 2. 提案漏洞
+### 2. Proposal Vulnerabilities
 
-恶意提案可能导致资金损失。
+Malicious proposals can lead to fund loss.
 
-## 安全机制
+## Security Mechanisms
 
-### 时间锁
+### Timelocks
 
-提案执行前有足够的时间供社区审查。
+Ensure sufficient time for community review before a proposal is executed.
 
-### 多签钱包
+### Multi-signature Wallets
 
-关键操作需要多个签名者批准。
+Critical operations require approval from multiple signers.
 
-## 最佳实践
+## Best Practices
 
-1. **设置合理的提案门槛**
-2. **实施投票延迟机制**
-3. **建立紧急暂停功能**
-4. **定期安全审计**
+1. **Set Reasonable Proposal Thresholds**
+2. **Implement Voting Delay Mechanisms**
+3. **Establish Emergency Pause Functionality**
+4. **Conduct Regular Security Audits**
 
-## 案例研究
+## Case Studies
 
-分析几个 DAO 治理攻击案例：
-- 闪电贷治理攻击
-- 提案执行漏洞
+Analysis of several DAO governance attack cases:
+- Flash loan governance attacks.
+- Proposal execution vulnerabilities.
 
-## 工具推荐
+## Recommended Tools
 
-- **Snapshot**: 链下投票平台
-- **Tally**: DAO 治理仪表板
+- **Snapshot**: Off-chain voting platform.
+- **Tally**: DAO governance dashboard.
 
-## 结论
+## Conclusion
 
-DAO 治理需要平衡去中心化和安全性。
+DAO governance requires a balance between decentralization and security.

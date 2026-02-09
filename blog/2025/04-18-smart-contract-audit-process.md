@@ -1,54 +1,54 @@
 ---
 slug: smart-contract-audit-process
-title: 智能合约审计流程详解
+title: Detailed Explanation of the Smart Contract Audit Process
 authors: [autosec]
 tags: [customers]
 date: 2025-04-18T10:00
 ---
 
-了解智能合约审计的完整流程，确保代码安全可靠。
+Understand the complete smart contract audit process to ensure the code is secure and reliable.
 
 <!--truncate-->
 
-## 审计流程
+## Audit Process
 
-### 1. 准备阶段
+### 1. Preparation Phase
 
-- 收集项目文档
-- 了解业务逻辑
-- 确定审计范围
+- Collect project documentation.
+- Understand the business logic.
+- Define the audit scope.
 
-### 2. 代码审查
+### 2. Code Review
 
-- 人工代码审查
-- 自动化工具扫描
-- 测试用例验证
+- Manual code review.
+- Automated tool scanning.
+- Test case verification.
 
-### 3. 报告编写
+### 3. Report Generation
 
-- 漏洞分级
-- 修复建议
-- 最佳实践推荐
+- Vulnerability classification.
+- Remediation recommendations.
+- Best practice suggestions.
 
-## 常用工具
+## Common Tools
 
-- **Slither**: 静态分析工具
-- **Mythril**: 符号执行引擎
-- **Echidna**: 模糊测试工具
+- **Slither**: Static analysis tool.
+- **Mythril**: Symbolic execution engine.
+- **Echidna**: Fuzzing tool.
 
-## 审计清单
+## Audit Checklist
 
-- [ ] 重入攻击检查
-- [ ] 访问控制验证
-- [ ] 整数溢出检测
-- [ ] 外部调用安全性
+- [ ] Reentrancy attack check.
+- [ ] Access control verification.
+- [ ] Integer overflow detection.
+- [ ] External call security.
 
-## 选择审计公司
+## Selecting an Audit Firm
 
-- 查看过往审计案例
-- 了解团队背景
-- 比较价格和周期
+- Review past audit cases.
+- Understand the team's background.
+- Compare pricing and timelines.
 
-## 结论
+## Conclusion
 
-专业的安全审计是智能合约上线前的必要步骤。
+Professional security audits are a necessary step before deploying smart contracts.

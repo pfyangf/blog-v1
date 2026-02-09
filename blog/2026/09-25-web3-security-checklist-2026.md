@@ -1,103 +1,103 @@
 ---
 slug: web3-security-checklist-2026
-title: 2026 Web3 安全检查清单
+title: 2026 Web3 Security Checklist
 authors: [autosec]
 tags: [security-guides]
 date: 2026-09-25T10:00
 image: https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630&fit=crop
 ---
 
-一份全面的 Web3 安全检查清单，帮助开发者和用户提高安全意识。
+A comprehensive Web3 security checklist to help developers and users enhance security awareness.
 
 <!--truncate-->
 
-## 开发者检查清单
+## Developer Checklist
 
-### 智能合约开发
+### Smart Contract Development
 
-- [ ] 使用最新版本的 Solidity
-- [ ] 遵循 Checks-Effects-Interactions 模式
-- [ ] 实施访问控制
-- [ ] 添加事件日志
-- [ ] 编写全面的测试用例
+- [ ] Use the latest version of Solidity.
+- [ ] Follow the Checks-Effects-Interactions pattern.
+- [ ] Implement access controls.
+- [ ] Add event logging.
+- [ ] Write comprehensive test cases.
 
-### 安全审计
+### Security Audits
 
-- [ ] 静态分析工具扫描
-- [ ] 第三方安全审计
-- [ ] 漏洞赏金计划
-- [ ] 模糊测试
-- [ ] 形式化验证（关键合约）
+- [ ] Static analysis tool scanning.
+- [ ] Third-party security audits.
+- [ ] Bug bounty program.
+- [ ] Fuzz testing.
+- [ ] Formal verification (for critical contracts).
 
-### 部署前
+### Pre-Deployment
 
-- [ ] 测试网充分测试
-- [ ] 准备紧急暂停机制
-- [ ] 设置监控告警
-- [ ] 准备事件响应计划
-- [ ] 文档完整
+- [ ] Thorough testing on testnets.
+- [ ] Prepare emergency pause mechanisms.
+- [ ] Set up monitoring and alerts.
+- [ ] Prepare an incident response plan.
+- [ ] Complete documentation.
 
-## 用户检查清单
+## User Checklist
 
-### 钱包安全
+### Wallet Security
 
-- [ ] 使用硬件钱包存储大额资产
-- [ ] 备份助记词（离线存储）
-- [ ] 启用钱包的安全功能
-- [ ] 定期更新钱包软件
-- [ ] 使用不同钱包分散风险
+- [ ] Use hardware wallets for storing large amounts of assets.
+- [ ] Backup seed phrases (store offline).
+- [ ] Enable wallet security features.
+- [ ] Regularly update wallet software.
+- [ ] Diversify risk using different wallets.
 
-### 交易安全
+### Transaction Security
 
-- [ ] 验证网站 URL
-- [ ] 检查合约地址
-- [ ] 理解交易内容再签名
-- [ ] 设置合理的滑点
-- [ ] 小额测试新协议
+- [ ] Verify website URLs.
+- [ ] Check contract addresses.
+- [ ] Understand transaction content before signing.
+- [ ] Set reasonable slippage tolerance.
+- [ ] Test new protocols with small amounts.
 
-### 日常习惯
+### Daily Habits
 
-- [ ] 不在公共 WiFi 进行交易
-- [ ] 定期检查授权
-- [ ] 关注项目官方公告
-- [ ] 学习最新的安全知识
-- [ ] 保持怀疑态度
+- [ ] Avoid transacting over public WiFi.
+- [ ] Regularly review authorizations.
+- [ ] Follow official project announcements.
+- [ ] Stay updated on the latest security knowledge.
+- [ ] Maintain a skeptical attitude.
 
-## 项目方检查清单
+## Project Team Checklist
 
-### 安全运营
+### Security Operations
 
-- [ ] 建立安全团队
-- [ ] 定期安全培训
-- [ ] 实施 bug 赏金计划
-- [ ] 准备事件响应流程
-- [ ] 购买安全保险
+- [ ] Establish a security team.
+- [ ] Conduct regular security training.
+- [ ] Implement a bug bounty program.
+- [ ] Prepare an incident response process.
+- [ ] Purchase security insurance.
 
-### 用户教育
+### User Education
 
-- [ ] 提供安全使用指南
-- [ ] 警告常见诈骗手段
-- [ ] 建立官方沟通渠道
-- [ ] 及时发布安全公告
+- [ ] Provide security usage guides.
+- [ ] Warn about common scam methods.
+- [ ] Establish official communication channels.
+- [ ] Timely release security announcements.
 
-## 紧急情况处理
+## Emergency Response
 
-### 发现漏洞时
+### When a Vulnerability is Discovered
 
-1. 立即暂停合约（如有此功能）
-2. 通知用户
-3. 联系安全团队
-4. 准备修复方案
-5. 透明沟通
+1. Immediately pause the contract (if such functionality exists).
+2. Notify users.
+3. Contact the security team.
+4. Prepare a remediation plan.
+5. Communicate transparently.
 
-### 资产被盗时
+### When Assets are Stolen
 
-1. 立即转移剩余资产
-2. 报告给相关平台
-3. 联系执法部门
-4. 追踪资金流向
-5. 总结经验教训
+1. Immediately transfer remaining assets.
+2. Report to relevant platforms.
+3. Contact law enforcement.
+4. Track fund flows.
+5. Summarize lessons learned.
 
-## 总结
+## Conclusion
 
-安全是一个持续的过程，需要所有参与者的共同努力。定期回顾和更新这份清单，保持警惕。
+Security is an ongoing process that requires the joint effort of all participants. Regularly review and update this checklist to stay vigilant.

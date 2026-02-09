@@ -1,49 +1,49 @@
 ---
 slug: layer2-security-analysis
-title: Layer 2 安全性分析
+title: Layer 2 Security Analysis
 authors: [autosec]
 tags: [whitehat-spotlight]
 date: 2025-07-22T10:00
 ---
 
-Layer 2 解决方案正在快速发展，但也带来了新的安全考虑。
+Layer 2 solutions are rapidly evolving, but they also introduce new security considerations.
 
 <!--truncate-->
 
-## Layer 2 类型
+## Layer 2 Types
 
 ### Rollups
 
-- **Optimistic Rollups**: 乐观执行
-- **ZK Rollups**: 零知识证明
+- **Optimistic Rollups**: Optimistic execution.
+- **ZK Rollups**: Zero-knowledge proofs.
 
 ### State Channels
 
-点对点的链下交易通道。
+Peer-to-peer off-chain transaction channels.
 
-## 安全风险
+## Security Risks
 
-### 1. 桥接风险
+### 1. Bridging Risks
 
-Layer 1 和 Layer 2 之间的资产桥接是攻击热点。
+Asset bridges between Layer 1 and Layer 2 are hotspots for attacks.
 
-### 2. 排序器中心化
+### 2. Sequencer Centralization
 
-大多数 Layer 2 的排序器是中心化的。
+Sequencers in most Layer 2 solutions are centralized.
 
-## 安全建议
+## Security Recommendations
 
-- 了解不同 Layer 2 的安全模型
-- 分散资产，不要全部存放在一个 Layer 2
-- 关注项目的去中心化路线图
+- Understand the security models of different Layer 2 solutions.
+- Diversify assets; do not store all funds on a single Layer 2.
+- Monitor the decentralization roadmaps of projects.
 
-## 主流 Layer 2
+## Major Layer 2 Solutions
 
-- **Arbitrum**: Optimistic Rollup
-- **Optimism**: Optimistic Rollup
-- **zkSync**: ZK Rollup
-- **StarkNet**: ZK Rollup
+- **Arbitrum**: Optimistic Rollup.
+- **Optimism**: Optimistic Rollup.
+- **zkSync**: ZK Rollup.
+- **StarkNet**: ZK Rollup.
 
-## 总结
+## Conclusion
 
-Layer 2 提供了扩容解决方案，但需要理解其安全权衡。
+Layer 2 offers scaling solutions, but it's crucial to understand their security trade-offs.

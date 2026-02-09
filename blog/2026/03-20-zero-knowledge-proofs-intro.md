@@ -1,55 +1,56 @@
 ---
 slug: zero-knowledge-proofs-intro
-title: 零知识证明入门指南
+title: Introduction to Zero-Knowledge Proofs
 authors: [autosec]
 tags: [security-guides]
 date: 2026-03-20T10:00
+image: https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630&fit=crop
 ---
 
-零知识证明（Zero-Knowledge Proofs）是区块链隐私保护的关键技术。
+Zero-Knowledge Proofs (ZKPs) are a key technology for privacy protection in blockchain.
 
 <!--truncate-->
 
-## 什么是零知识证明？
+## What Are Zero-Knowledge Proofs?
 
-零知识证明允许一方向另一方证明某个陈述是真实的，而无需透露任何额外信息。
+Zero-Knowledge Proofs allow one party (the prover) to prove to another party (the verifier) that a statement is true, without revealing any additional information.
 
-## 应用场景
+## Application Scenarios
 
-### 1. 隐私交易
+### 1. Private Transactions
 
-在不泄露交易细节的情况下验证交易有效性。
+Verify transaction validity without disclosing transaction details.
 
-### 2. 身份验证
+### 2. Identity Authentication
 
-证明身份而不透露具体信息。
+Prove identity without revealing specific information.
 
-## 主要技术
+## Key Technologies
 
 ### zk-SNARKs
 
-- 简洁的证明
-- 快速验证
-- 需要可信设置
+- Succinct proofs.
+- Fast verification.
+- Requires a trusted setup.
 
 ### zk-STARKs
 
-- 无需可信设置
-- 抗量子攻击
-- 证明较大
+- No trusted setup required.
+- Quantum-resistant.
+- Larger proof size.
 
-## 实际项目
+## Real-World Projects
 
-- **Zcash**: 隐私加密货币
-- **zkSync**: Layer 2 扩容方案
-- **Polygon zkEVM**: 兼容 EVM 的 ZK Rollup
+- **Zcash**: Privacy-focused cryptocurrency.
+- **zkSync**: Layer 2 scaling solution.
+- **Polygon zkEVM**: EVM-compatible ZK Rollup.
 
-## 学习资源
+## Learning Resources
 
 - ZK Whiteboard Sessions
 - ZK Hack
-- 0xPARC 课程
+- 0xPARC Courses
 
-## 总结
+## Conclusion
 
-零知识证明是区块链技术的重要发展方向，值得深入学习。
+Zero-Knowledge Proofs represent a crucial direction for blockchain technology development and are worth deep exploration.
