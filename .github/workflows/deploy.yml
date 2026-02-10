@@ -39,3 +39,58 @@ jobs:
           publish_dir: ./build
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
+
+      # ====================================
+      # 第七步：部署到自定义服务器（可选）
+      # ====================================
+      - name: 📤 部署到自定义服务器
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          SERVER_HOST: ${{ secrets.SERVER_HOST }}
+          SERVER_USER: ${{ secrets.SERVER_USER }}
+          SERVER_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          SERVER_DEPLOY_PATH: ${{ secrets.SERVER_DEPLOY_PATH }}
+        run: |
+          # 创建 SSH 目录
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          
+          # 添加服务器的 SSH 密钥
+          echo "$SERVER_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          
+          # 添加服务器到 known_hosts（避免首次连接提示）
+          ssh-keyscan -H $SERVER_HOST >> ~/.ssh/known_hosts 2>/dev/null || true
+          
+          # 压缩构建产物
+          tar -czf build.tar.gz build/
+          
+          # 上传到服务器
+          scp -i ~/.ssh/deploy_key -r build/ $SERVER_USER@$SERVER_HOST:$SERVER_DEPLOY_PATH/
+          
+          # 执行服务器端部署脚本（可选）
+          ssh -i ~/.ssh/deploy_key $SERVER_USER@$SERVER_HOST "cd $SERVER_DEPLOY_PATH && rm -rf build && mv build.tar.gz build.tar.gz.bak && tar -xzf build.tar.gz && rm -f build.tar.gz" || true
+          
+          # 清理临时文件
+          rm -f ~/.ssh/deploy_key
+          rm -f build.tar.gz
+      
+      # # ====================================
+      # # 第八步：发送部署通知（可选）
+      # # ====================================
+      # - name: 📧 部署通知（Discord/钉钉/企业微信）
+      #   if: always()
+      #   uses: 8398a7/action-slack@v3
+      #   with:
+      #     status: ${{ job.status }}
+      #     text: |
+      #       🚀 AutoSec 博客部署完成
+      #       📝 触发者: ${{ github.actor }}
+      #       🔗 提交: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
+      #       ✅ GitHub Pages: https://pfyangf.github.io
+      #       🖥️ 自定义服务器: ${{ secrets.SERVER_HOST }}
+      #     webhook_url: ${{ secrets.SLACK_WEBHOOK }}
+      #   env:
+      #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+      #   continue-on-error: true
+
