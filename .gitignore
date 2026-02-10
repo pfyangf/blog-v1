@@ -30,3 +30,5 @@ yarn-error.log*
 
 # TypeScript
 *.tsbuildinfo
+# other security config
+amt.config.json
