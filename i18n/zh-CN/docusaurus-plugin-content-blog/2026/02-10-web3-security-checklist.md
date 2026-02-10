@@ -7,6 +7,10 @@ date: 2026-02-10T10:00
 image: https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630&fit=crop
 ---
 
+Web3 安全检查清单
+
+<!--truncate-->
+
 ## 一、智能合约安全
 - 使用 **OpenZeppelin** 等成熟库，避免重复造轮子
 - 遵循 **Checks → Effects → Interactions** 模式，防止重入攻击
