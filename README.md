@@ -24,4 +24,9 @@ npm i
 amt 文件名 目标语言 模型
 amt 02-10-web3-security-checklist.md en deepseek
 ```
-
+5. 检查中英文博客无误后提交
+```
+git add *
+git commit -m "xxx"
+git push origin main
+```
